@@ -6,48 +6,56 @@
 //
 
 import UIKit
-import CoreLocation
+import AVKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var videoView: UIView!
 
-    let locationManager = CLLocationManager()
+//    var audioPlayer = AVAudioPlayer()
+    
+    var videoPlayer = AVPlayer()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        ЗАПУСК АУДИО!
+//        guard let audioURL = Bundle.main.url(forResource: "audio_only", withExtension: "m4a") else {
+//            return
+//        }
+//        audioPlayer = (try? AVAudioPlayer(contentsOf:audioURL)) ?? AVAudioPlayer()
+//        audioPlayer.volume = 0
         
-    
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
         
-//        прекращение обновление локации
-//        locationManager.stopUpdatingLocation()
-    }
-
-}
-
-extension ViewController: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print(locations)
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print(error)
-    }
-    
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        let status = manager.authorizationStatus
-        switch status {
-        case .authorizedAlways:
-            break
-        case .authorizedWhenInUse:
-            break
-        case .denied:
-            break
-        case .notDetermined:
-            break
-        case .restricted:
-            break
+//        ЗАПУСК ВИДЕО!
+        guard let url = Bundle.main.url(forResource: "", withExtension: "") else {
+            return
         }
+        videoPlayer = AVPlayer(url: url)
+        
+        let playerLayer = AVPlayerLayer(player: videoPlayer)
+        playerLayer.frame = videoView.bounds
+        videoView.layer.addSublayer(playerLayer)
+        
+        
+        videoPlayer.play()
     }
+    
+//    @IBAction func startButtonPressed() {
+//        audioPlayer.play()
+//        audioPlayer.volume += 0.1
+//
+//    }
+//
+//    @IBAction func stopButtonPressed() {
+//        audioPlayer.pause()
+//    }
+    
+    @IBAction func show() {
+        let controller = AVPlayerViewController()
+        controller.player = videoPlayer
+        show(controller, sender: nil)
+    }
+
+
 }

@@ -62,9 +62,17 @@
 				715FD4DB271498980018E57A /* Main.storyboard */,
 				715FD4DE2714989A0018E57A /* Assets.xcassets */,
 				715FD4E02714989A0018E57A /* LaunchScreen.storyboard */,
+				715FD4E92714AA7E0018E57A /* Resource */,
 				715FD4E32714989A0018E57A /* Info.plist */,
 			);
 			path = Lesson_22;
+			sourceTree = "<group>";
+		};
+		715FD4E92714AA7E0018E57A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
