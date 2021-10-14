@@ -52,9 +52,12 @@ class ViewController: UIViewController {
 //    }
     
     @IBAction func show() {
-        let controller = AVPlayerViewController()
-        controller.player = videoPlayer
-        show(controller, sender: nil)
+//        let controller = AVPlayerViewController()
+//        controller.player = videoPlayer
+//        show(controller, sender: nil)
+        
+        let url  = URL(string: "applicationType://")!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 
 
