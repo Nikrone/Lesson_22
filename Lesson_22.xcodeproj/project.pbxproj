@@ -14,6 +14,7 @@
 		715FD4DF2714989A0018E57A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 715FD4DE2714989A0018E57A /* Assets.xcassets */; };
 		715FD4E22714989A0018E57A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715FD4E02714989A0018E57A /* LaunchScreen.storyboard */; };
 		71CACDDD271991660013274A /* dorofeeva_-_nevesta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71CACDDC271991660013274A /* dorofeeva_-_nevesta.mp3 */; };
+		71CACDDF271997B90013274A /* OneRepublic - Love Runs Out (Official Music Video).mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 71CACDDE271997B90013274A /* OneRepublic - Love Runs Out (Official Music Video).mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		715FD4E12714989A0018E57A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		715FD4E32714989A0018E57A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71CACDDC271991660013274A /* dorofeeva_-_nevesta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dorofeeva_-_nevesta.mp3"; sourceTree = "<group>"; };
+		71CACDDE271997B90013274A /* OneRepublic - Love Runs Out (Official Music Video).mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OneRepublic - Love Runs Out (Official Music Video).mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				71CACDDC271991660013274A /* dorofeeva_-_nevesta.mp3 */,
+				71CACDDE271997B90013274A /* OneRepublic - Love Runs Out (Official Music Video).mp4 */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				71CACDDD271991660013274A /* dorofeeva_-_nevesta.mp3 in Resources */,
 				715FD4DF2714989A0018E57A /* Assets.xcassets in Resources */,
 				715FD4DD271498980018E57A /* Main.storyboard in Resources */,
+				71CACDDF271997B90013274A /* OneRepublic - Love Runs Out (Official Music Video).mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
